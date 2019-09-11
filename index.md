@@ -1,5 +1,5 @@
 ---
-title:  'E-ARK Archival Information Package (AIP)'
+title:  E-ARK Archival Information Package (AIP)
 subtitle: Specification for Archival Information Packages
 abstract: |
         This E-ARK AIP format specification defines the requirements for building
@@ -20,7 +20,7 @@ abstract: |
         into multiple, sub-ordinated parts. Finally, the AIP specification gives a best
         practice recommendations regarding the physical packaging of AIPs.
 version: 2.0.1
-date: 04.09.2019
+date: 09.09.2019
 ---
 
 {{ page.subtitle }}
@@ -237,6 +237,7 @@ format that makes system migration easier.
 # 4\. Preliminary definitions and remarks
 
 <a name="ip"></a>
+
 <a name="informationpackageip"></a>
 
 ## 4.1\. Information package (IP)
@@ -246,6 +247,7 @@ specifications, such as the SIP, AIP, or DIP. In this sense, an
 *information package* (IP) is an instance of a format that complies with the CSIP.
 
 <a name="reps"></a>
+
 <a name="representations"></a>
 
 ## 4.2\. Representations
@@ -297,6 +299,7 @@ proposing the divided METS structure described more in detail in section
 or representation parts separately.
 
 <a name="structdiv"></a>
+
 <a name="structuraldivisionoftheaip"></a>
 
 ## 4.4\. Structural division of the AIP
@@ -410,6 +413,7 @@ entity.
       Available at: http://www.ietf.org/rfc/rfc2119.txt
 
 <a name="csip"></a>
+
 <a name="overviewaboutthecsip"></a>
 
 ## 5.1\. Overview about the CSIP
@@ -452,6 +456,7 @@ representations. This requirement overrules requirement *CSIPSTR9* defined by
 the CSIP. See also requirement *AIP-REPRESENTATIONS*.
 
 <a name="compdiv"></a>
+
 <a name="compoundvs.dividedpackagestructure"></a>
 
 ### 5.1.2\. Compound vs. divided package structure
@@ -542,6 +547,7 @@ of the first representation - all files are in the Portable Document Format
 (PDF).
 
 <a name="aipstruct"></a>
+
 <a name="aipstructure"></a>
 
 ## 5.2\. AIP structure
@@ -572,6 +578,7 @@ complemented by AIP specific properties. This is the reason why the inherent
 structure of the AIP is different to the one of the SIP and the DIP.
 
 <a name="aipcontsubm"></a>
+
 <a name="aipcontainerforsubmissions"></a>
 
 ### 5.2.1\. AIP container for submissions
@@ -656,6 +663,7 @@ folder directly contains an IP, is present in the following sections about the
 AIP structure.
 
 <a name="aipreps"></a>
+
 <a name="aiprepresentations"></a>
 
 ### 5.2.2\. AIP representations
@@ -800,6 +808,7 @@ current METS file under `metadata/submission`, i.e. the metadata file
 the initial metadata and the updated metadata.
 
 <a name="parentchild"></a>
+
 <a name="parent-childrelationship"></a>
 
 ### 5.2.4\. Parent-Child relationship
@@ -861,6 +870,7 @@ syntax, element attributes have a leading ’@’ character. For example
 `//mets:file/@USE` denotes the `USE` attribute of a `<file>` element.
 
 <a name="structmd"></a>
+
 <a name="structuralmetadata"></a>
 
 ### 5.3.1\. Structural metadata
@@ -885,6 +895,7 @@ This section has a focus on METS, therefore, if no namespace prefix is given,
 the element belongs to the METS default namespace.
 
 <a name="metsid"></a>
+
 <a name="metsidentifier"></a>
 
 #### 5.3.1.1\. METS identifier
@@ -2049,15 +2060,17 @@ listed in every payload manifest.
 
 ## II. Revision History
 
-| Revision No. | Date       | Authors(s)                       | Description                                                           |
+| Revision No. | Date       | Authors(s)                       | Description                               |
 |--------------|------------|----------------------------------|-------------------------------------------|
-| 0.1          | 20.09.2016 | Sven Schlarb <br/>Jan Rörden    | First draft of the specification document based on E-ARK deliverable D4.3. |
-| 0.2          | 15.10.2016 | Miguel Ferreira <br/>Luis Faria | Comments, Contribution                                                     |
-| 0.9          | 20.12.2016 | Sven Schlarb                    | Provided for internal review (E-ARK deliverable D4.4)                      |
-| 0.9.1        | 06.01.2017 | Andrew Wilson                   | Comments and language review                                               |
-| 0.9.2        | 13.01.2017 | Kuldar Aas                      | Comments                                                                   |
-| 1.0          | 27.01.2017 | Sven Schlarb <br/>Jan Rörden    | Addressing reviewer comments and language edits; final changes.            |
-| 1.1          | 12.12.2018 | Carl Wilson <br/>Sven Schlarb   | Migration to markdown, review                                              |
+| 0.1          | 20.09.2016 | Sven Schlarb <br/>Jan Rörden     | First draft based on E-ARK deliverable D4.3.           |
+| 0.2          | 15.10.2016 | Miguel Ferreira <br/>Luis Faria  | Comments, Contribution                                 |
+| 0.9          | 20.12.2016 | Sven Schlarb                     | Provided for internal review (E-ARK deliverable D4.4)  |
+| 0.9.1        | 06.01.2017 | Andrew Wilson                    | Comments and language review                           |
+| 0.9.2        | 13.01.2017 | Kuldar Aas                       | Comments                                               |
+| 1.0          | 27.01.2017 | Sven Schlarb <br/>Jan Rörden     | Address review comments and language; final changes.   |
+| 2.0-DRAFT    | 12.12.2018 | Sven Schlarb <br/>Carl Wilson    | Migration to markdown, review                          |
+| 2.0.0        | 15.05.2018 | Carl Wilson <br/>Sven Schlarb    | Version 2.0.0                                          |
+| 2.0.1        | 15.05.2018 | Carl Wilson                      | Site structure and PDF layout                          |
 
 
 III Acknowledgements
