@@ -1,41 +1,111 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>E-ARK Archival Information Package (AIP) | E-ARK-AIP</title>
-<meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="E-ARK Archival Information Package (AIP)" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="E-ARK AIP Specification" />
-<meta property="og:description" content="E-ARK AIP Specification" />
-<link rel="canonical" href="http://0.0.0.0:4000/" />
-<meta property="og:url" content="http://0.0.0.0:4000/" />
-<meta property="og:site_name" content="E-ARK-AIP" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-09-04T00:00:00+00:00" />
-<script type="application/ld+json">
-{"@type":"WebSite","headline":"E-ARK Archival Information Package (AIP)","datePublished":"2019-09-04T00:00:00+00:00","dateModified":"2019-09-04T00:00:00+00:00","url":"http://0.0.0.0:4000/","name":"E-ARK-AIP","description":"E-ARK AIP Specification","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+  <meta name="Description" content="">
+  <meta name="keywords" content="">
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="http://0.0.0.0:4000/">E-ARK-AIP</a></h1>
-      
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/site.css" >
 
-      <h1 id="specification-for-archival-information-packages">Specification for Archival Information Packages</h1>
+  <title>E-ARK AIP | E-ARK Archival Information Package (AIP)</title>
+</head>
+
+<body role="document">
+
+  <header id="nav-wrap">
+    <div id="nav-cont" class="container">
+      <nav id="navbar-main" class="navbar navbar-expand-md" role="navigation">
+        <a class="navbar-brand" href="https://dilcis.eu/" title="AIP main page."><img src="/img/Logo_DILCIS_one_color-v05.png" alt="DILCIS logo" title="DILCIS logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+           <ul class="navbar-nav mr-auto">
+             
+                 
+                 <!-- display the top level navigation for items that don’t have a submenu -->
+                     
+                         <li class="nav-item active">
+                     
+                     <a class="nav-link" href="/">Specification</a>
+                 
+                     </li>
+             
+                 
+                 <!-- display the top level navigation for items that don’t have a submenu -->
+                     
+                         <li class="nav-item">
+                     
+                     <a class="nav-link" href="/pdf/eark-aip.pdf">PDF</a>
+                 
+                     </li>
+             
+                 
+                 <!-- display the top level navigation for items that don’t have a submenu -->
+                     
+                         <li class="nav-item">
+                     
+                     <a class="nav-link" href="/profile/">Profile</a>
+                 
+                     </li>
+             
+                 
+                 <!-- display the top level navigation for items that don’t have a submenu -->
+                     
+                         <li class="nav-item">
+                     
+                     <a class="nav-link" href="/archive/">Archive</a>
+                 
+                     </li>
+             
+                 
+                 <!-- display the top level navigation for items that don’t have a submenu -->
+                     
+                         <li class="nav-item">
+                     
+                     <a class="nav-link" href="/examples/">Examples</a>
+                 
+                     </li>
+             
+                 
+                     <li class="dropdown">
+                       <a href="/" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">About <span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                       
+                           
+                             <li class="nav-item"><a class="nav-link" href="https://dilcis.eu/">DILCIS</a></li>
+                           
+                       
+                           
+                             <li class="nav-item"><a class="nav-link" href="https://github.com/DILCISBoard/E-ARK-AIP">On GitHub</a></li>
+                           
+                       
+                           
+                             <li class="nav-item"><a class="nav-link" href="https://github.com/DILCISBoard/E-ARK-AIP/archive/master.zip">Download</a></li>
+                           
+                       
+                       </ul>
+                 
+                     </li>
+             
+         </ul>
+</div>
+       </nav>
+    </div>
+  </header>
+
+  <div class="container theme-showcase" role="main">
+    <h1 id="specification-for-archival-information-packages">Specification for Archival Information Packages</h1>
 
 <h1 id="preface">Preface</h1>
 <h2 id="i-aim-of-the-specification">I. Aim of the Specification</h2>
-<p>This specification is one of several related specifications. The single most important aim of all of these specifications is the provision of a common set of specifications for packaging digital information for archiving purposes. The specifications are based on common, international standards for transmitting, describing and preserving digital data. They have been produced to help data creators, software developers and digital archives to tackle the challenge of short-, medium- and long-term data management and reuse in a sustainable, authentic, cost-efficient, manageable and interoperable way.</p>
+<p>This document is one of several related specifications which aim to provide a common set of usage descriptions of international standards for packaging digital information for archiving purposes. These specifications are based on common, international standards for transmitting, describing and preserving digital data. They also utilise the Reference Model for an Open Archival Information System (OAIS) which has Information Packages as its foundation. Familiarity with the core functional entities of OAIS is a prerequisite for understanding the specifications.</p>
 
-<p>The foundation upon which the specifications are built is the Reference model for an Open Archival Information System (OAIS) (OAIS Reference model) which has Information Packages as its basis. Familiarity with the core functional entities of OAIS is a prerequisite for understanding the specifications.
+<p>The specifications are designed to help data creators, software developers and digital archives to tackle the challenge of short-, medium- and long-term data management and reuse in a sustainable, authentic, cost-efficient, manageable and interoperable way.
 A visualisation of the current specification network can be seen here:</p>
 
 <p><a name="figi-dip"></a>
@@ -46,29 +116,30 @@ A visualisation of the current specification network can be seen here:</p>
 <h3 id="overview-of-the-e-ark-specifications">Overview of the E-ARK Specifications</h3>
 
 <h4 id="common-specification-for-information-packages-e-ark-csip">Common Specification for Information Packages (E-ARK CSIP)</h4>
-<p>This document introduces the concept of a Common Specification for Information Packages (CSIP). Its three main purposes are to:</p>
+<p>This document introduces the concept of a Common Specification for Information Packages (CSIP). The main purposes of CSIP are to:</p>
 
 <ul>
-  <li>Establish a common understanding of the requirements which need to be met in order to achieve interoperability of Information Packages.</li>
+  <li>Establish a common understanding of the requirements which need to be met to achieve interoperability of Information Packages.</li>
   <li>Establish a common base for the development of more specific Information Package definitions and tools within the digital preservation community.</li>
   <li>Propose the details of an XML-based implementation of the requirements using, to the largest possible extent, standards which are widely used in international digital preservation.</li>
-  <li>Ultimately the goal of the Common Specification is to reach a level of interoperability between all Information Packages so that tools implementing the Common Specification can be adopted by institutions without the need for further modifications or adaptations.</li>
 </ul>
+
+<p>Ultimately the goal of the Common Specification is to reach a level of interoperability between all Information Packages so that tools implementing the Common Specification can be adopted by institutions without the need for further modifications or adaptations.</p>
 
 <h4 id="specification-for-submission-information-packages-e-ark-sip">Specification for Submission Information Packages (E-ARK SIP)</h4>
 <p>The main aims of this specification are to:</p>
 
 <ul>
-  <li>Define a general structure for a Submission Information Package format suitable for a wide variety of archival scenarios, e.g. document and image collections, databases or geographical data.</li>
+  <li>Define a general structure for a Submission Information Package format suitable for a wide variety of archival scenarios, such as document and image collections, databases or geospatial data.</li>
   <li>Enhance interoperability between Producers and Archives.</li>
-  <li>Recommend best practices regarding metadata, content and structure of Submission Information Packages.</li>
+  <li>Recommend best practices regarding the structure, content and metadata of Submission Information Packages.</li>
 </ul>
 
 <h4 id="specification-for-archival-information-packages-e-ark-aip">Specification for Archival Information Packages (E-ARK AIP)</h4>
 <p>The main aims of this specification are to:</p>
 
 <ul>
-  <li>Define a generic structure of the AIP format suitable for a wide variety of data types, such as document and image collections, archival records, databases or geographical data.</li>
+  <li>Define a generic structure of the AIP format suitable for a wide variety of data types, such as document and image collections, archival records, databases or geospatial data.</li>
   <li>Recommend a set of metadata related to the structural and the preservation aspects of the AIP as implemented by the reference implementation (earkweb).</li>
   <li>Ensure the format is suitable to store large quantities of data.</li>
 </ul>
@@ -82,15 +153,16 @@ A visualisation of the current specification network can be seen here:</p>
 </ul>
 
 <h4 id="content-information-type-specifications-e-ark-cits">Content Information Type Specifications (E-ARK CITS)</h4>
-<p>The main aims of a Content Information Type Specification are to:</p>
+<p>The main aim of a Content Information Type Specification (CITS) is to:</p>
 
 <ul>
-  <li>Define, in technical terms, how data and metadata must be formatted and placed within a CSIP Information Package in order to achieve interoperability in exchanging specific Content Information.</li>
-  <li>The number of possible Content Information Type Specifications is unlimited. For at list of existing Content Information Type Specifications see, and read more about  Content Information Type Specifications in the Common Specification for Information Packages.</li>
+  <li>Define, in technical terms, how data and metadata must be formatted and placed within a CSIP Information Package to achieve interoperability in exchanging specific Content Information.</li>
 </ul>
 
-<h2 id="ii-organisational-support">II. Organisational support</h2>
-<p>This specification is maintained by the Digital Information LifeCycle Interoperability Standards Board (DILCIS Board, <a href="http://dilcis.eu/">http://dilcis.eu/</a>). The DILCIS Board was created to enhance and maintain the draft specifications developed in the European Archival Records and Knowledge Preservation Project (E-ARK project, <a href="http://eark-project.com/">http://eark-project.com/</a>) which concluded in January 2017. The Board consists of eight members, but there is no restriction on the number of participants in the work. All Board documents and specifications are stored in GitHub (<a href="https://github.com/DILCISBoard/">https://github.com/DILCISBoard/</a>) while published versions are made available on the Board webpage. Since 2018 the DILCIS Board has been responsible for the core specifications in the Connecting Europe Facility eArchiving Building Block <a href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eArchiving/">https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eArchiving/</a>.</p>
+<p>The number of possible Content Information Type Specifications is unlimited. For a list of existing Content Information Type Specifications see the relevant section in the Common Specification for Information Packages.</p>
+
+<h2 id="ii-organisational-support">II. Organisational Support</h2>
+<p>This specification is maintained by the Digital Information LifeCycle Interoperability Standards Board (DILCIS Board, <a href="http://dilcis.eu/">http://dilcis.eu/</a>). The role of the DILCIS Board is to enhance and maintain the draft specifications developed in the European Archival Records and Knowledge Preservation Project (E-ARK project, <a href="http://eark-project.com/">http://eark-project.com/</a>) which concluded in January 2017. The Board consists of eight members, but no restriction is placed on the number of participants taking part in the work. All Board documents and specifications are stored in GitHub (<a href="https://github.com/DILCISBoard/">https://github.com/DILCISBoard/</a>) while published versions are made available on the Board webpage. Since 2018 the DILCIS Board has been responsible for the core specifications in the Connecting Europe Facility eArchiving Building Block <a href="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eArchiving/">https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eArchiving/</a>.</p>
 
 <h2 id="iii-authors--revision-history">III. Authors &amp; Revision History</h2>
 <p>A full list of contributors to this specification, as well as the revision history can be found in the <a href="#postface">Postface material</a>.</p>
@@ -99,9 +171,9 @@ A visualisation of the current specification network can be seen here:</p>
 
 <h2 id="specification-for-archival-information-packages-1">Specification for Archival Information Packages</h2>
 
-<p>Version: 2.0.1</p>
+<p>Version: 2.0.4</p>
 
-<p>Date: 04.09.2019</p>
+<p>Date: 11.06.2020</p>
 
 <p>1.  <a href="#scopeandpurpose">Scope and purpose</a><br>
 2.  <a href="#relationtootherdocuments">Relation to other documents</a><br>
@@ -246,8 +318,9 @@ format that makes system migration easier.</p>
 
 <h1 id="4-preliminary-definitions-and-remarks">4. Preliminary definitions and remarks</h1>
 
-<p><a name="ip"></a>
-<a name="informationpackageip"></a></p>
+<p><a name="ip"></a></p>
+
+<p><a name="informationpackageip"></a></p>
 
 <h2 id="41-information-package-ip">4.1. Information package (IP)</h2>
 
@@ -255,8 +328,9 @@ format that makes system migration easier.</p>
 specifications, such as the SIP, AIP, or DIP. In this sense, an
 <em>information package</em> (IP) is an instance of a format that complies with the CSIP.</p>
 
-<p><a name="reps"></a>
-<a name="representations"></a></p>
+<p><a name="reps"></a></p>
+
+<p><a name="representations"></a></p>
 
 <h2 id="42-representations">4.2. Representations</h2>
 
@@ -308,8 +382,9 @@ proposing the divided METS structure described more in detail in section
 <a href="#compdiv">5.1</a>. The divided structure makes it easier to manage representations
 or representation parts separately.</p>
 
-<p><a name="structdiv"></a>
-<a name="structuraldivisionoftheaip"></a></p>
+<p><a name="structdiv"></a></p>
+
+<p><a name="structuraldivisionoftheaip"></a></p>
 
 <h2 id="44-structural-division-of-the-aip">4.4. Structural division of the AIP</h2>
 
@@ -423,8 +498,9 @@ metadata standards. And on the other hand, there is the physical container
 specification which defines the bit-level manifestation of the transferable
 entity.</p>
 
-<p><a name="csip"></a>
-<a name="overviewaboutthecsip"></a></p>
+<p><a name="csip"></a></p>
+
+<p><a name="overviewaboutthecsip"></a></p>
 
 <h2 id="51-overview-about-the-csip">5.1. Overview about the CSIP</h2>
 
@@ -454,10 +530,10 @@ metadata can relate either to the IP as a whole or to individual representations
 <h3 id="511-representations-in-the-aip">5.1.1. Representations in the AIP</h3>
 
 <p>As already mentioned, the structural requirements defined by the CSIP generally
-apply to the AIP. However, the AIP <code class="highlighter-rouge">representations</code> folder contains
+apply to the AIP. However, the AIP <code class="language-plaintext highlighter-rouge">representations</code> folder contains
 representations which are created as part of the AIP maintenance. If no
 mainteance operation was performed, this folder is not present. For this reason,
-the CSIP requirement which prescribes the presence of the <code class="highlighter-rouge">representations</code>
+the CSIP requirement which prescribes the presence of the <code class="language-plaintext highlighter-rouge">representations</code>
 folder is overruled by the following AIP specific requirement.</p>
 
 <p><a name="aip-representations-optional"></a><strong>AIP-REPRESENTATIONS-OPTIONAL</strong>: The
@@ -465,8 +541,9 @@ Archival Information Package (AIP) folder COULD include a folder named
 representations. This requirement overrules requirement <em>CSIPSTR9</em> defined by
 the CSIP. See also requirement <em>AIP-REPRESENTATIONS</em>.</p>
 
-<p><a name="compdiv"></a>
-<a name="compoundvs.dividedpackagestructure"></a></p>
+<p><a name="compdiv"></a></p>
+
+<p><a name="compoundvs.dividedpackagestructure"></a></p>
 
 <h3 id="512-compound-vs-divided-package-structure">5.1.2. Compound vs. divided package structure</h3>
 
@@ -494,18 +571,18 @@ the IP.</p>
 <p><strong>Figure 3:</strong>
 One METS file in the root of the package references all metadata and data files</p>
 
-<p>Even though the number suffix of the folders <code class="highlighter-rouge">rep-001</code> and <code class="highlighter-rouge">rep-002</code> of the
+<p>Even though the number suffix of the folders <code class="language-plaintext highlighter-rouge">rep-001</code> and <code class="language-plaintext highlighter-rouge">rep-002</code> of the
 example shown in Figure <a href="#fig3">3</a> suggests an order of representations, there
 are no requirements regarding the naming of folders containing the
 representations.  The order of representations and the relations between them is
-defined by the structural and preservation metadata. The <code class="highlighter-rouge">representations</code>
+defined by the structural and preservation metadata. The <code class="language-plaintext highlighter-rouge">representations</code>
 folder is mandatory, even for IPs which contain only one representation.</p>
 
 <p>If the <em>divided</em> METS structure is used, as shown in Figure <a href="#fig4">4</a>, then a
 separate METS file for each representation exists which are referenced by the
 root METS file. The example shown in Figure <a href="#fig4">4</a> has a METS file in the
-IP’s root which points to the METS files <code class="highlighter-rouge">Representations/Rep-001/METS.xml</code> and
-<code class="highlighter-rouge">Representations/Rep-002/METS.xml</code>.</p>
+IP’s root which points to the METS files <code class="language-plaintext highlighter-rouge">Representations/Rep-001/METS.xml</code> and
+<code class="language-plaintext highlighter-rouge">Representations/Rep-002/METS.xml</code>.</p>
 
 <p><a name="fig4"></a>
 <img src="figs/visio/fig_4_mets_root.svg" alt="Information Package structure" title="Root METS file references METS files of the different representations"></p>
@@ -520,11 +597,11 @@ the root METS difficult to work with).</p>
 
 <p>As a corollary of this division method we define, on the one hand, a
 representation-based division as the separation of representations in different
-folders under the <code class="highlighter-rouge">representations</code> folder as shown in the example of Figure
+folders under the <code class="language-plaintext highlighter-rouge">representations</code> folder as shown in the example of Figure
 <a href="#fig4">4</a>. And, on the other hand, we define a size-based division as the
 separation of representation parts. To illustrate this, Figure <a href="#fig5">5</a> shows
 an example where a set of files belongs to the same representation (here named
-<code class="highlighter-rouge">binary</code>) and is referenced in two separate physical containers (here named {C1}
+<code class="language-plaintext highlighter-rouge">binary</code>) and is referenced in two separate physical containers (here named {C1}
 and {C2} respectively). A key requirement when using size-based division of a
 representation is that there must not be any overlap in the structure of the
 representations, and that each sub-folder path must be unique across the
@@ -555,8 +632,9 @@ are in the Open Document Format (ODT) and in the second one - as a derivative
 of the first representation - all files are in the Portable Document Format
 (PDF).</p>
 
-<p><a name="aipstruct"></a>
-<a name="aipstructure"></a></p>
+<p><a name="aipstruct"></a></p>
+
+<p><a name="aipstructure"></a></p>
 
 <h2 id="52-aip-structure">5.2. AIP structure</h2>
 <p>Based on the brief overview about the CSIP given in the previous section, the
@@ -585,19 +663,20 @@ in the sense that it inherits general properties from the CSIP which are
 complemented by AIP specific properties. This is the reason why the inherent
 structure of the AIP is different to the one of the SIP and the DIP.</p>
 
-<p><a name="aipcontsubm"></a>
-<a name="aipcontainerforsubmissions"></a></p>
+<p><a name="aipcontsubm"></a></p>
+
+<p><a name="aipcontainerforsubmissions"></a></p>
 
 <h3 id="521-aip-container-for-submissions">5.2.1. AIP container for submissions</h3>
 
 <p>The AIP format allows storing submissions; having the submission in its original
 form can help to ensure authenticity of its representations. For this purpose,
-the AIP format defines a <code class="highlighter-rouge">submission</code> folder in the root of the AIP which
+the AIP format defines a <code class="language-plaintext highlighter-rouge">submission</code> folder in the root of the AIP which
 contains the original submission as well as any submission updates added after
 the AIP was created. The following obligatory requirement applies:</p>
 
 <p><a name="aip-submission-root"></a><strong>AIP-SUBMISSION-ROOT</strong>: The root folder of
-the AIP package COULD contain a <code class="highlighter-rouge">submission</code> folder which is a container for
+the AIP package COULD contain a <code class="language-plaintext highlighter-rouge">submission</code> folder which is a container for
 the original submission and for any updates of SIPs which are submitted after
 the AIP was created.</p>
 
@@ -608,14 +687,14 @@ one and followed by the submission updates.</p>
 <p>If the submission folder does not contain a METS file, it is assumed that
 one or several submissions are contained in subfolders.</p>
 
-<p><a name="aip-submission-ip"></a><strong>AIP-SUBMISSION-IP</strong>: The <code class="highlighter-rouge">submission</code> folder
+<p><a name="aip-submission-ip"></a><strong>AIP-SUBMISSION-IP</strong>: The <code class="language-plaintext highlighter-rouge">submission</code> folder
 MUST contain an IP or at least one or several IPs in sub-folders.</p>
 
-<p><a name="aip-submission-ips"></a><strong>AIP-SUBMISSION-IPS</strong>: If the <code class="highlighter-rouge">submission</code>
+<p><a name="aip-submission-ips"></a><strong>AIP-SUBMISSION-IPS</strong>: If the <code class="language-plaintext highlighter-rouge">submission</code>
 folder contains one or several sub-folders, the sub-folders MUST contain IPs.</p>
 
 <p><a name="aip-submission-nomets"></a><strong>AIP-SUBMISSIONS-NOMETS</strong>: If the
-<code class="highlighter-rouge">submission</code> folder contains one or several IPs in sub-folders it MUST NOT
+<code class="language-plaintext highlighter-rouge">submission</code> folder contains one or several IPs in sub-folders it MUST NOT
 contain a METS file.</p>
 
 <p>The naming scheme of these sub-folders can be freely defined. However, it should
@@ -653,7 +732,7 @@ numbers or ISO 8601 date derived strings as part of the folder name.</p>
   </li>
 </ul>
 
-<p>Figure <a href="#fig6">6</a> shows the variant where the <code class="highlighter-rouge">submission</code> folder contains an IP which
+<p>Figure <a href="#fig6">6</a> shows the variant where the <code class="language-plaintext highlighter-rouge">submission</code> folder contains an IP which
 represents the original submission. Although this structure does not reflect the
 version of the submission, the versioning layer can be introduced when the AIP
 is updated. The IP contained in the submission folder must be moved to a version
@@ -676,12 +755,13 @@ updates which were created over the course of three days.</p>
 <p><strong>Figure 7:</strong>
 The AIP containing submissions in subfolders to support submission updates.</p>
 
-<p>For the sake of simplicity, only the first variant, i.e. where the <code class="highlighter-rouge">submission</code>
+<p>For the sake of simplicity, only the first variant, i.e. where the <code class="language-plaintext highlighter-rouge">submission</code>
 folder directly contains an IP, is present in the following sections about the
 AIP structure.</p>
 
-<p><a name="aipreps"></a>
-<a name="aiprepresentations"></a></p>
+<p><a name="aipreps"></a></p>
+
+<p><a name="aiprepresentations"></a></p>
 
 <h3 id="522-aip-representations">5.2.2. AIP representations</h3>
 
@@ -694,7 +774,7 @@ maintenance or for digital preservation purposes.</p>
 <p>To illustrate this with the help of an example, Figure <a href="#fig8">8</a> shows the
 structure of an AIP where the original submission consists of two
 representations which were part of the original submission. The
-<code class="highlighter-rouge">submission</code> folder of the AIP contains the original submission “as
+<code class="language-plaintext highlighter-rouge">submission</code> folder of the AIP contains the original submission “as
 is”, which means that neither data nor metadata is changed.</p>
 
 <p><a name="fig8"></a>
@@ -705,7 +785,7 @@ AIP representations.</p>
 
 <p>Let us now assume that during SIP to AIP conversion an additional representation
 is added to the AIP. Figure <a href="#fig9">9</a> illustrates an example where an additional
-<code class="highlighter-rouge">representations</code> folder exists as a sibling of the <code class="highlighter-rouge">submission</code> folder
+<code class="language-plaintext highlighter-rouge">representations</code> folder exists as a sibling of the <code class="language-plaintext highlighter-rouge">submission</code> folder
 which contains a new representation (rep-001.1) derived from one of the
 representations contained in the original submission (rep-001).</p>
 
@@ -721,26 +801,26 @@ added during SIP to AIP conversion.</p>
 <p><a name="aip-representations"></a><strong>AIP-REPRESENTATIONS</strong>: If a new
 representation is added during ingest (SIP to AIP conversion) or created as an
 AIP preservation measure (AIP to AIP conversion), the root folder of the AIP
-MUST contain a <code class="highlighter-rouge">representations</code> folder. For this folder, the same
+MUST contain a <code class="language-plaintext highlighter-rouge">representations</code> folder. For this folder, the same
 requirements as for the representations of an IP apply.</p>
 
-<p>Note that the three-digit number suffix following the name <code class="highlighter-rouge">rep-</code> used in
+<p>Note that the three-digit number suffix following the name <code class="language-plaintext highlighter-rouge">rep-</code> used in
 the example of Figure <a href="#fig9">9</a> indicates the order in time in which the
 representation of the original submission was created. And the additional
 number suffix after the dot indicates that the representation is a derivative
 of the representation identified by the three-digit number before the dot, i.e.
-<code class="highlighter-rouge">rep-001.1</code> is the first derivative of representation <code class="highlighter-rouge">rep-001</code>. This
+<code class="language-plaintext highlighter-rouge">rep-001.1</code> is the first derivative of representation <code class="language-plaintext highlighter-rouge">rep-001</code>. This
 is however for illustration purposes only; the naming of representations does
 not have to follow such logic.</p>
 
 <p>The AIP is an extension of the IP format; therefore it must follow the
 basic structure of an IP. Figure <a href="#fig9">9</a> shows that the IP components,
-consisting of METS file, <code class="highlighter-rouge">Metadata</code> and <code class="highlighter-rouge">representations</code> folders,
+consisting of METS file, <code class="language-plaintext highlighter-rouge">Metadata</code> and <code class="language-plaintext highlighter-rouge">representations</code> folders,
 are repeated on theAIP level. The extension of the AIP format is basically
 given by the fact thatthe AIP is an IP which can contain another IP (here i.e.
-a SIP) in the <code class="highlighter-rouge">submission</code> folder.</p>
+a SIP) in the <code class="language-plaintext highlighter-rouge">submission</code> folder.</p>
 
-<p>Note that the <code class="highlighter-rouge">representations</code> folder in the AIP root folder is optional.
+<p>Note that the <code class="language-plaintext highlighter-rouge">representations</code> folder in the AIP root folder is optional.
 It means that this folder must only exist in case representations other than
 the ones originally submitted are added to the AIP.</p>
 
@@ -748,7 +828,7 @@ the ones originally submitted are added to the AIP.</p>
 AIP’s root MUST contain a METS file that either references all metadata and
 data files or it references other METS files located in the corresponding
 representation folders of the AIPs or of the original submission’s
-<code class="highlighter-rouge">representations</code>.</p>
+<code class="language-plaintext highlighter-rouge">representations</code>.</p>
 
 <p>The METS file which is located in the root folder of the information package is
 called the <em>root METS</em> file.</p>
@@ -756,19 +836,19 @@ called the <em>root METS</em> file.</p>
 <p>As a concrete example let us assume a policy stating that PDF documents must
 generally be converted to PDF/A. Taking the premise formulated in section
 <a href="#structdiv">4.4</a> into account that the original submission is not to be
-changed, the additional representation is added in a <code class="highlighter-rouge">Representation</code>
+changed, the additional representation is added in a <code class="language-plaintext highlighter-rouge">Representation</code>
 folder in the root of the AIP as shown in figure <a href="#fig7">7</a>. Note that this
 example uses a representation-based division of METS files.</p>
 
 <p>Analogously to Figure <a href="#fig8">8</a> there are also two representations in the
 original submission shown in Figure <a href="#fig10">10</a>. The first representation
-(<code class="highlighter-rouge">Rep-001</code>) consists of a set of files in the Open Document Format (ODT)
-and the second one (<code class="highlighter-rouge">Rep-002</code>) is a derivative of the first set of files in
+(<code class="language-plaintext highlighter-rouge">Rep-001</code>) consists of a set of files in the Open Document Format (ODT)
+and the second one (<code class="language-plaintext highlighter-rouge">Rep-002</code>) is a derivative of the first set of files in
 the Portable Document Format (PDF). As an example we assume that an
 institutional policy prescribes that every PDF document must be converted to
 PDF/A during SIP to AIP conversion. Therefore the second representation
-(<code class="highlighter-rouge">Rep-002</code>) was converted to a set of PDF/A files and added to the AIP as
-an additional representation (<code class="highlighter-rouge">Rep-002.1</code>).</p>
+(<code class="language-plaintext highlighter-rouge">Rep-002</code>) was converted to a set of PDF/A files and added to the AIP as
+an additional representation (<code class="language-plaintext highlighter-rouge">Rep-002.1</code>).</p>
 
 <p><a name="fig10"></a>
 <img src="figs/visio/fig_10_aip_reps.svg" alt="Information Package structure" title="AIP using representation-based division of METS files."></p>
@@ -777,12 +857,12 @@ an additional representation (<code class="highlighter-rouge">Rep-002.1</code>).
 AIP using representation-based division of METS files.</p>
 
 <p>The two representations of the original submission are located in the
-<code class="highlighter-rouge">submission/representations</code> folder of the AIP and the METS file of the
+<code class="language-plaintext highlighter-rouge">submission/representations</code> folder of the AIP and the METS file of the
 submission references the corresponding representation METS files using a
 relative path to be resolved within the SIP. The root level METS file of the
 AIP references the METS file of the original submission
-(<code class="highlighter-rouge">submission/METS.xml</code>) and the METS file of the new representation
-(<code class="highlighter-rouge">representations/Rep-002.1/METS.xml</code>).</p>
+(<code class="language-plaintext highlighter-rouge">submission/METS.xml</code>) and the METS file of the new representation
+(<code class="language-plaintext highlighter-rouge">representations/Rep-002.1/METS.xml</code>).</p>
 
 <p><a name="changingthemetadataoftheoriginalsubmission"></a></p>
 
@@ -796,9 +876,9 @@ metadata needs to be updated.</p>
 
 <p>As an example let us assume that we have to recalculate the checksum during SIP
 to AIP conversion and that the checksum is recorded as an attribute of the METS
-file element. As shown in Figure <a href="#fig11">11</a>, the AIP’s <code class="highlighter-rouge">Metadata</code> folder can –
+file element. As shown in Figure <a href="#fig11">11</a>, the AIP’s <code class="language-plaintext highlighter-rouge">Metadata</code> folder can –
 additionally to the existing metadata category folders – contain a
-<code class="highlighter-rouge">submission</code> folder with metadata files (here <code class="highlighter-rouge">METS.xml</code>) that by definition
+<code class="language-plaintext highlighter-rouge">submission</code> folder with metadata files (here <code class="language-plaintext highlighter-rouge">METS.xml</code>) that by definition
 have priority over the ones contained in the original submission. This means
 that in case metadata needs to be updated, they must be placed into the root
 level metadata folder because metadata for the original submission is not
@@ -808,24 +888,25 @@ allowed to be changed.</p>
 <img src="figs/visio/fig_11_aip_reps.svg" alt="Information Package structure" title="METS file priorities."></p>
 
 <p><strong>Figure 11:</strong>
-METS files in the AIP’s <code class="highlighter-rouge">Metadata/submission</code> folder have priority over
+METS files in the AIP’s <code class="language-plaintext highlighter-rouge">Metadata/submission</code> folder have priority over
 the ones contained in the original submission</p>
 
-<p><a name="aip-md-priority"></a><strong>AIP-MD-PRIORITY</strong>: Let <code class="highlighter-rouge">&lt;MDPath&gt;</code> be a
+<p><a name="aip-md-priority"></a><strong>AIP-MD-PRIORITY</strong>: Let <code class="language-plaintext highlighter-rouge">&lt;MDPath&gt;</code> be a
 sub-folder-path to a metadata file, then a metadata file under the
-<code class="highlighter-rouge">AIP/metadata/submission</code> folder MUST have priority over a metadata file
-under the <code class="highlighter-rouge">AIP/submission</code> folder so that <code class="highlighter-rouge">AIP/metadata/submission/&lt;MDPath&gt;</code>
-has priority over <code class="highlighter-rouge">AIP/submission/&lt;MDPath&gt;</code>.</p>
+<code class="language-plaintext highlighter-rouge">AIP/metadata/submission</code> folder MUST have priority over a metadata file
+under the <code class="language-plaintext highlighter-rouge">AIP/submission</code> folder so that <code class="language-plaintext highlighter-rouge">AIP/metadata/submission/&lt;MDPath&gt;</code>
+has priority over <code class="language-plaintext highlighter-rouge">AIP/submission/&lt;MDPath&gt;</code>.</p>
 
 <p>An example is shown in Figure <a href="#fig11">11</a> where the METS file in the root of
 the AIP references an obsolete METS file of the original submission and a
-current METS file under <code class="highlighter-rouge">metadata/submission</code>, i.e. the metadata file
-<code class="highlighter-rouge">AIP/metadata/submission/METS.xml</code> has priority over the metadata file
-<code class="highlighter-rouge">AIP/submission/METS.xml</code>. In this way users have the possibility to consult both
+current METS file under <code class="language-plaintext highlighter-rouge">metadata/submission</code>, i.e. the metadata file
+<code class="language-plaintext highlighter-rouge">AIP/metadata/submission/METS.xml</code> has priority over the metadata file
+<code class="language-plaintext highlighter-rouge">AIP/submission/METS.xml</code>. In this way users have the possibility to consult both
 the initial metadata and the updated metadata.</p>
 
-<p><a name="parentchild"></a>
-<a name="parent-childrelationship"></a></p>
+<p><a name="parentchild"></a></p>
+
+<p><a name="parent-childrelationship"></a></p>
 
 <h3 id="524-parent-child-relationship">5.2.4. Parent-Child relationship</h3>
 
@@ -876,15 +957,16 @@ type of additional metadata, such as descriptive metadata using Dublin Core or
 EAD<sup id="fnref:4"><a href="#fn:4" class="footnote">3</a></sup>, can be used.</p>
 
 <p>In the following, XML elements are either enclosed between angle brackets
-(e.g. <code class="highlighter-rouge">&lt;fileSpec&gt;</code>) or addressed using XPath syntax (e.g. <code class="highlighter-rouge">/mets/metsHdr</code>). In the
+(e.g. <code class="language-plaintext highlighter-rouge">&lt;fileSpec&gt;</code>) or addressed using XPath syntax (e.g. <code class="language-plaintext highlighter-rouge">/mets/metsHdr</code>). In the
 latter case a leading slash selects a node from the XML document root and the
-double slash (<code class="highlighter-rouge">//</code>) selects nodes in the document from the current node that
+double slash (<code class="language-plaintext highlighter-rouge">//</code>) selects nodes in the document from the current node that
 match the selection, no matter where they are. Also in line with the XPath
 syntax, element attributes have a leading ’@’ character. For example
-<code class="highlighter-rouge">//mets:file/@USE</code> denotes the <code class="highlighter-rouge">USE</code> attribute of a <code class="highlighter-rouge">&lt;file&gt;</code> element.</p>
+<code class="language-plaintext highlighter-rouge">//mets:file/@USE</code> denotes the <code class="language-plaintext highlighter-rouge">USE</code> attribute of a <code class="language-plaintext highlighter-rouge">&lt;file&gt;</code> element.</p>
 
-<p><a name="structmd"></a>
-<a name="structuralmetadata"></a></p>
+<p><a name="structmd"></a></p>
+
+<p><a name="structuralmetadata"></a></p>
 
 <h3 id="531-structural-metadata">5.3.1. Structural metadata</h3>
 
@@ -909,8 +991,9 @@ parts belonging to the same intellectual entity.</li>
 <p>This section has a focus on METS, therefore, if no namespace prefix is given,
 the element belongs to the METS default namespace.</p>
 
-<p><a name="metsid"></a>
-<a name="metsidentifier"></a></p>
+<p><a name="metsid"></a></p>
+
+<p><a name="metsidentifier"></a></p>
 
 <h4 id="5311-mets-identifier">5.3.1.1. METS identifier</h4>
 
@@ -936,18 +1019,18 @@ SIP originates.</p>
 
 <p>An alternative to this is to use a UUID:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://tools.ietf.org/html/rfc4122
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://tools.ietf.org/html/rfc4122
 </code></pre></div></div>
 
-<p>The prefix <code class="highlighter-rouge">urn:uuid:</code> would indicate the identifier type. For example, if the
+<p>The prefix <code class="language-plaintext highlighter-rouge">urn:uuid:</code> would indicate the identifier type. For example, if the
 package identifier value is
-<code class="highlighter-rouge">"123e4567-e89b-12d3-a456-426655440000"</code> this would be the value of the METS root
-element’s <code class="highlighter-rouge">OBJID</code> attribute:</p>
+<code class="language-plaintext highlighter-rouge">"123e4567-e89b-12d3-a456-426655440000"</code> this would be the value of the METS root
+element’s <code class="language-plaintext highlighter-rouge">OBJID</code> attribute:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/mets/@OBJID="urn:uuid:123e4567-e89b-12d3-a456-426655440000"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/mets/@OBJID="urn:uuid:123e4567-e89b-12d3-a456-426655440000"
 </code></pre></div></div>
 
-<p>The <code class="highlighter-rouge">OBJID</code> attribute of the root METS is the persistent unique identifier of
+<p>The <code class="language-plaintext highlighter-rouge">OBJID</code> attribute of the root METS is the persistent unique identifier of
 the AIP.</p>
 
 <p><a name="digitalobjects"></a></p>
@@ -956,7 +1039,7 @@ the AIP.</p>
 
 <p><a name="aip-digital-objects"></a><strong>AIP-DIGITAL-OBJECTS</strong>: Any file contained
 in the AIP is a <em>digital objects</em> which MUST be described in a file section
-(<code class="highlighter-rouge">&lt;fileSec&gt;</code>) of the METS document.</p>
+(<code class="language-plaintext highlighter-rouge">&lt;fileSec&gt;</code>) of the METS document.</p>
 
 <p>Listing 2 shows an example of a file section with one file.</p>
 
@@ -975,11 +1058,11 @@ in the AIP is a <em>digital objects</em> which MUST be described in a file secti
 </code></pre></div></div>
 
 <p><strong>Listing 2:</strong>
-Example of a file in the <code class="highlighter-rouge">fileSec</code> as child of a <code class="highlighter-rouge">fileGroup</code> element (long attribute
+Example of a file in the <code class="language-plaintext highlighter-rouge">fileSec</code> as child of a <code class="language-plaintext highlighter-rouge">fileGroup</code> element (long attribute
 values replaced by “…” for readability)</p>
 
-<p>Table 2 lists the attributes of the <code class="highlighter-rouge">&lt;file&gt;</code> element with an example value. The
-<code class="highlighter-rouge">/file/FLocat</code> element provides the link to the actual file.</p>
+<p>Table 2 lists the attributes of the <code class="language-plaintext highlighter-rouge">&lt;file&gt;</code> element with an example value. The
+<code class="language-plaintext highlighter-rouge">/file/FLocat</code> element provides the link to the actual file.</p>
 
 <table>
   <thead>
@@ -991,44 +1074,44 @@ values replaced by “…” for readability)</p>
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">file/@ID</code></td>
-      <td>Identifier of a file wich is part of the AIPFile identifier; must be unique and start with the prefix <code class="highlighter-rouge">ID</code>
+      <td><code class="language-plaintext highlighter-rouge">file/@ID</code></td>
+      <td>Identifier of a file wich is part of the AIPFile identifier; must be unique and start with the prefix <code class="language-plaintext highlighter-rouge">ID</code>
 </td>
-      <td><code class="highlighter-rouge">ID77146c6c-c8c3-4406-80b5-b3b41901f9d0</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ID77146c6c-c8c3-4406-80b5-b3b41901f9d0</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">file/@ADMID</code></td>
+      <td><code class="language-plaintext highlighter-rouge">file/@ADMID</code></td>
       <td>Used to link it to relevant administrative metadata sections that relate to the digital object described. Can be a white space separated list of identifiers.</td>
       <td>
-<code class="highlighter-rouge">ID4566af74-0f7b-11e5-a6c0-1697f925ec7b</code> <br><code class="highlighter-rouge">ID4566af74-0f7b-11e5-a6c0-1697f925ec7c</code>
+<code class="language-plaintext highlighter-rouge">ID4566af74-0f7b-11e5-a6c0-1697f925ec7b</code> <br><code class="language-plaintext highlighter-rouge">ID4566af74-0f7b-11e5-a6c0-1697f925ec7c</code>
 </td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">file/@CHECKSUMTYPE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">file/@CHECKSUMTYPE</code></td>
       <td>Hash-sum calculator algorithm</td>
-      <td><code class="highlighter-rouge">SHA-256</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SHA-256</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">file/@CHECKSUM</code></td>
+      <td><code class="language-plaintext highlighter-rouge">file/@CHECKSUM</code></td>
       <td>Hash-sum</td>
       <td>
-<code class="highlighter-rouge">977fb584d53cd64662dfba427f351908</code> <br><code class="highlighter-rouge">13dfc58979f51a2703f8621b9e1bc274</code>
+<code class="language-plaintext highlighter-rouge">977fb584d53cd64662dfba427f351908</code> <br><code class="language-plaintext highlighter-rouge">13dfc58979f51a2703f8621b9e1bc274</code>
 </td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">file/@CREATED</code></td>
+      <td><code class="language-plaintext highlighter-rouge">file/@CREATED</code></td>
       <td>Date when the file entry was created.</td>
-      <td><code class="highlighter-rouge">2014-05-01T01:00:00+01:00</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2014-05-01T01:00:00+01:00</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">file/@SIZE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">file/@SIZE</code></td>
       <td>Size of the file in bytes.</td>
-      <td><code class="highlighter-rouge">2498</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2498</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">file/@MIMETYPE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">file/@MIMETYPE</code></td>
       <td>Mime-type</td>
-      <td><code class="highlighter-rouge">application/pdf</code></td>
+      <td><code class="language-plaintext highlighter-rouge">application/pdf</code></td>
     </tr>
   </tbody>
 </table>
@@ -1039,18 +1122,18 @@ Attributes of the file element</p>
 <p>The following rules apply for the URL attribute of the <flocat> element:</flocat></p>
 
 <p><a name="aip-paths-protocol"></a><strong>AIP-PATHS-PROTOCOL</strong>: The local file paths
-COULD indicate the protocol part (<code class="highlighter-rouge">file://</code>), in this case the path must be a
+COULD indicate the protocol part (<code class="language-plaintext highlighter-rouge">file://</code>), in this case the path must be a
 valid URI according to RFC3986.<sup id="fnref:9"><a href="#fn:9" class="footnote">8</a></sup></p>
 
 <p><a name="aip-paths-relative"></a><strong>AIP-PATHS-RELATIVE</strong>: If the protocol part
 is omitted, the path MUST be interpreted as a reference relative to the METS
-document (e.g. <code class="highlighter-rouge">./file.txt</code> or <code class="highlighter-rouge">file.txt</code> referring to the file <code class="highlighter-rouge">file.txt</code> in
+document (e.g. <code class="language-plaintext highlighter-rouge">./file.txt</code> or <code class="language-plaintext highlighter-rouge">file.txt</code> referring to the file <code class="language-plaintext highlighter-rouge">file.txt</code> in
 the current folder).</p>
 
 <p>Additionally, the following requirement applies for compressed files:</p>
 
 <p><a name="aip-transform"></a><strong>AIP-TRANSFORM</strong>: If a file is compressed, the
-transformFile element (<code class="highlighter-rouge">//file/transformFile</code>) SHOULD indicate how the packages
+transformFile element (<code class="language-plaintext highlighter-rouge">//file/transformFile</code>) SHOULD indicate how the packages
 have to be processed by means of the attributes ’TRANSFORMTYPE’,
 ’TRANSFORMALGORITHM’, and ’TRANSFORMORDER’.</p>
 
@@ -1070,23 +1153,23 @@ Compressed file</p>
 
 <h4 id="5313-referenced-metadata">5.3.1.3. Referenced Metadata</h4>
 
-<p>The use of embedded metadata by using the <code class="highlighter-rouge">&lt;mdWrap&gt;</code> element is discouraged.
-Instead, it is recommended to reference metadata by using the <code class="highlighter-rouge">&lt;mdRef&gt;</code> element.</p>
+<p>The use of embedded metadata by using the <code class="language-plaintext highlighter-rouge">&lt;mdWrap&gt;</code> element is discouraged.
+Instead, it is recommended to reference metadata by using the <code class="language-plaintext highlighter-rouge">&lt;mdRef&gt;</code> element.</p>
 
 <p><a name="aip-mets-md-ref"></a><strong>AIP-METS-MD-REF</strong>: External metadata files such
-as EAD or PREMIS files MUST be referenced by means of the <code class="highlighter-rouge">&lt;mdRef&gt;</code> element.
-Its <code class="highlighter-rouge">xlink:href</code> attribute value must be either a URL relative to the location
+as EAD or PREMIS files MUST be referenced by means of the <code class="language-plaintext highlighter-rouge">&lt;mdRef&gt;</code> element.
+Its <code class="language-plaintext highlighter-rouge">xlink:href</code> attribute value must be either a URL relative to the location
 of the METS root or an absolute URL.</p>
 
 <p><a name="descriptivemetadata"></a></p>
 
 <h5 id="53131-descriptive-metadata">5.3.1.3.1. Descriptive metadata</h5>
-<p>The descriptive metadata section (<code class="highlighter-rouge">&lt;dmdSec&gt;</code>) references descriptive metadata
-contained in the AIP. Multiple <code class="highlighter-rouge">&lt;dmdSec&gt;</code> elements are allowed so that descriptive
+<p>The descriptive metadata section (<code class="language-plaintext highlighter-rouge">&lt;dmdSec&gt;</code>) references descriptive metadata
+contained in the AIP. Multiple <code class="language-plaintext highlighter-rouge">&lt;dmdSec&gt;</code> elements are allowed so that descriptive
 metadata file can be referenced separately within the METS object.</p>
 
-<p>Descriptive metadata is referenced by means of the <code class="highlighter-rouge">&lt;mdRef&gt;</code> element as part of
-the descriptive metadata element <code class="highlighter-rouge">&lt;dmdSec&gt;</code>. Listing 4 shows an example linking to
+<p>Descriptive metadata is referenced by means of the <code class="language-plaintext highlighter-rouge">&lt;mdRef&gt;</code> element as part of
+the descriptive metadata element <code class="language-plaintext highlighter-rouge">&lt;dmdSec&gt;</code>. Listing 4 shows an example linking to
 an EAD XML metadata file.</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dmdSec</span> <span class="na">ID=</span><span class="s">"uuid-550e8400-e29b-41d4-a716-44665544000a"</span><span class="nt">&gt;</span>
@@ -1105,9 +1188,9 @@ Linking to an EAD XML descriptive metadata file</p>
 <h5 id="53132-administrative-metadata">5.3.1.3.2. Administrative Metadata</h5>
 
 <p><a name="aip-mets-md-amdsec"></a><strong>AIP-METS-MD-AMDSEC</strong>: The AIP METS MUST have
-a single <code class="highlighter-rouge">&lt;amdSec&gt;</code> element which contains one or several <code class="highlighter-rouge">&lt;digiprovMD&gt;</code>
-elements. The <code class="highlighter-rouge">&lt;mdRef&gt;</code> child of at least one of these elements must be of type
-<code class="highlighter-rouge">PREMIS</code> (<code class="highlighter-rouge">@MDTYPE=”PREMIS”</code>) with the reference to a PREMIS file in the <code class="highlighter-rouge">Metadata</code>
+a single <code class="language-plaintext highlighter-rouge">&lt;amdSec&gt;</code> element which contains one or several <code class="language-plaintext highlighter-rouge">&lt;digiprovMD&gt;</code>
+elements. The <code class="language-plaintext highlighter-rouge">&lt;mdRef&gt;</code> child of at least one of these elements must be of type
+<code class="language-plaintext highlighter-rouge">PREMIS</code> (<code class="language-plaintext highlighter-rouge">@MDTYPE=”PREMIS”</code>) with the reference to a PREMIS file in the <code class="language-plaintext highlighter-rouge">Metadata</code>
 folder of the AIP root.</p>
 
 <p>Listing 5 shows an example with a link to a PREMIS.xml file:</p>
@@ -1125,20 +1208,20 @@ folder of the AIP root.</p>
 <p><strong>Listing 5:</strong>
 Linking to an EAD XML descriptive metadata file</p>
 
-<p><a name="aip-premis-obsolete"></a><strong>AIP-PREMIS-OBSOLETE</strong>: The <code class="highlighter-rouge">@STATUS</code>
-attribute value of the <code class="highlighter-rouge">&lt;digiprovMD&gt;</code> element SHOULD be <code class="highlighter-rouge">SUPERSEDED</code> if
+<p><a name="aip-premis-obsolete"></a><strong>AIP-PREMIS-OBSOLETE</strong>: The <code class="language-plaintext highlighter-rouge">@STATUS</code>
+attribute value of the <code class="language-plaintext highlighter-rouge">&lt;digiprovMD&gt;</code> element SHOULD be <code class="language-plaintext highlighter-rouge">SUPERSEDED</code> if
 the PREMIS file is obsolete and only included in the AIP to ensure
 traceability.</p>
 
-<p><a name="aip-premis-status"></a><strong>AIP-PREMIS-STATUS</strong>: The <code class="highlighter-rouge">@STATUS</code> attribute
-value of the <code class="highlighter-rouge">&lt;digiprovMD&gt;</code> element COULD be <code class="highlighter-rouge">CURRENT</code> to make explicit that
+<p><a name="aip-premis-status"></a><strong>AIP-PREMIS-STATUS</strong>: The <code class="language-plaintext highlighter-rouge">@STATUS</code> attribute
+value of the <code class="language-plaintext highlighter-rouge">&lt;digiprovMD&gt;</code> element COULD be <code class="language-plaintext highlighter-rouge">CURRENT</code> to make explicit that
 the PREMIS file is active.</p>
 
 <p><a name="structuralmap"></a></p>
 
 <h4 id="5314-structural-map">5.3.1.4. Structural map</h4>
 
-<p><a name="aip-structmap-label"></a><strong>AIP-STRUCTMAP-LABEL</strong>: One <code class="highlighter-rouge">&lt;structMap&gt;</code>
+<p><a name="aip-structmap-label"></a><strong>AIP-STRUCTMAP-LABEL</strong>: One <code class="language-plaintext highlighter-rouge">&lt;structMap&gt;</code>
 with the LABEL attribute value “CSIP structMap” MUST
 be present in the METS file.</p>
 
@@ -1168,10 +1251,10 @@ Obligatory CSIP structMap</p>
 
 <p><a name="aip-divided-mets"></a><strong>AIP-DIVIDED-METS</strong>: When an AIP uses the
 divided METS structure, i.e. the different representations have their own
-METS file, the mandatory <code class="highlighter-rouge">&lt;structMap&gt;</code> MUST organize those METS files
-through <code class="highlighter-rouge">&lt;mptr&gt;</code> and <code class="highlighter-rouge">&lt;fptr&gt;</code> entries, for each representation. The <code class="highlighter-rouge">&lt;mptr&gt;</code>
-node MUST reference the <code class="highlighter-rouge">/&lt;representation&gt;/METS.xml</code> and point at the
-corresponding <code class="highlighter-rouge">&lt;file&gt;</code> entry in the <code class="highlighter-rouge">&lt;fileSec&gt;</code> using the <code class="highlighter-rouge">&lt;fptr&gt;</code> element.</p>
+METS file, the mandatory <code class="language-plaintext highlighter-rouge">&lt;structMap&gt;</code> MUST organize those METS files
+through <code class="language-plaintext highlighter-rouge">&lt;mptr&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;fptr&gt;</code> entries, for each representation. The <code class="language-plaintext highlighter-rouge">&lt;mptr&gt;</code>
+node MUST reference the <code class="language-plaintext highlighter-rouge">/&lt;representation&gt;/METS.xml</code> and point at the
+corresponding <code class="language-plaintext highlighter-rouge">&lt;file&gt;</code> entry in the <code class="language-plaintext highlighter-rouge">&lt;fileSec&gt;</code> using the <code class="language-plaintext highlighter-rouge">&lt;fptr&gt;</code> element.</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;structMap</span> <span class="na">ID=</span><span class="s">"uuid-1465D250-0A24-4714-9555-5C1211722FB8"</span> <span class="na">TYPE=</span><span class="s">"PHYSICAL"</span> <span class="na">LABEL=</span><span class="s">"CSIP structMap"</span><span class="nt">&gt;</span>
    <span class="nt">&lt;div</span> <span class="na">ID=</span><span class="s">"uuid-638362BC-65D9-4DA7-9457-5156B3965A18"</span> <span class="na">LABEL=</span><span class="s">"uuid-4422c185-5407-4918-83b1-7abfa77de182"</span><span class="nt">&gt;</span>
@@ -1198,11 +1281,11 @@ Structural map referencing METS files of the different representations</p>
 
 <h4 id="5316-child-aip-references-parent-aip">5.3.1.6. Child AIP references parent AIP</h4>
 <p>The optional reference to a parent AIP is expressed by a structural map with the
-LABEL attribute value <code class="highlighter-rouge">Parent</code>. Listing 8 shows an example where a UUID is used
-as the package identifier and the <code class="highlighter-rouge">xlink:href</code> attribute has the UUID identifier
+LABEL attribute value <code class="language-plaintext highlighter-rouge">Parent</code>. Listing 8 shows an example where a UUID is used
+as the package identifier and the <code class="language-plaintext highlighter-rouge">xlink:href</code> attribute has the UUID identifier
 value of the referenced parent AIP as value. This identifier implicitly
 references the METS file of the corresponding package. If other locator
-types, such as URN, URL, PURL, HANDLE, or DOI are used, the <code class="highlighter-rouge">LOCTYPE</code> attribute
+types, such as URN, URL, PURL, HANDLE, or DOI are used, the <code class="language-plaintext highlighter-rouge">LOCTYPE</code> attribute
 can be set correspondingly.</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;structMap</span> <span class="na">ID=</span><span class="s">"uuid-35CB3341-D731-4AC3-9622-DB8901CD6736"</span> <span class="na">TYPE=</span><span class="s">"PHYSICAL"</span> <span class="na">LABEL=</span><span class="s">"parent AIP"</span><span class="nt">&gt;</span>
@@ -1296,13 +1379,13 @@ progress”) are taken into consideration.<sup id="fnref:12"><a href="#fn:12" cl
 
 <h5 id="53221-object-identifier">5.3.2.2.1. Object identifier</h5>
 
-<p><a name="aip-id-local"></a><strong>AIP-ID-LOCAL</strong>: If an identifier of type <code class="highlighter-rouge">local</code> is
+<p><a name="aip-id-local"></a><strong>AIP-ID-LOCAL</strong>: If an identifier of type <code class="language-plaintext highlighter-rouge">local</code> is
 used, this identifier SHOULD be unique in the scope of the PREMIS document.</p>
 
 <p><a name="aip-id-other"></a><strong>AIP-ID-OTHER</strong>: Other object identifiers of the
-allowed types COULD be used additionally to the identifier of type <code class="highlighter-rouge">local</code>.</p>
+allowed types COULD be used additionally to the identifier of type <code class="language-plaintext highlighter-rouge">local</code>.</p>
 
-<p>Listing 10 shows an example of an identifier of type <code class="highlighter-rouge">local</code>.</p>
+<p>Listing 10 shows an example of an identifier of type <code class="language-plaintext highlighter-rouge">local</code>.</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;objectIdentifier&gt;</span>
 	<span class="nt">&lt;objectIdentifierType&gt;</span>local<span class="nt">&lt;/objectIdentifierType&gt;</span>
@@ -1318,7 +1401,7 @@ Object identifier</p>
 <h5 id="53222-checksums">5.3.2.2.2. Checksums</h5>
 
 <p><a name="aip-premis-checksums"></a><strong>AIP-PREMIS-CHECKSUMS</strong>: Checksums COULD be
-provided as a descendant of the <code class="highlighter-rouge">objectCharacteristics</code> element information in
+provided as a descendant of the <code class="language-plaintext highlighter-rouge">objectCharacteristics</code> element information in
 form of a SHA-256 hashsum, a fixed size 256-bit value.</p>
 
 <p>An example is shown in Listing 11.</p>
@@ -1361,7 +1444,7 @@ based on the PRONOM technical registry<sup id="fnref:15"><a href="#fn:15" class=
 </code></pre></div></div>
 
 <p><strong>Listing 12:</strong>
-Optionally, the format version can be provided using the <code class="highlighter-rouge">formatDesignation</code> element.</p>
+Optionally, the format version can be provided using the <code class="language-plaintext highlighter-rouge">formatDesignation</code> element.</p>
 
 <p><a name="objectcharacterisation"></a></p>
 
@@ -1369,7 +1452,7 @@ Optionally, the format version can be provided using the <code class="highlighte
 
 <p><a name="aip-premis-characterisation"></a><strong>AIP-PREMIS-CHARACTERISATION</strong>: The
 JHOVE<sup id="fnref:16"><a href="#fn:16" class="footnote">14</a></sup> technical characterisation result (XML format) COULD be embedded as
-a descendant of the <code class="highlighter-rouge">objectCharacteristicsExtension</code> element. An example is
+a descendant of the <code class="language-plaintext highlighter-rouge">objectCharacteristicsExtension</code> element. An example is
 shown in Listing 13.</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;objectCharacteristicsExtension&gt;</span>
@@ -1387,7 +1470,7 @@ JHove digital object characterisation</p>
 <h5 id="53225-original-name">5.3.2.2.5. Original name</h5>
 
 <p><a name="aip-premis-original-name"></a><strong>AIP-PREMIS-ORIGINAL-NAME</strong>: The
-<code class="highlighter-rouge">originalName</code> element COULD be used to record the name of an original file.</p>
+<code class="language-plaintext highlighter-rouge">originalName</code> element COULD be used to record the name of an original file.</p>
 
 <p>An example is shown in Listing 14.</p>
 
@@ -1430,11 +1513,11 @@ Storage description</p>
 <h5 id="53227-relationship">5.3.2.2.7. Relationship</h5>
 
 <p><a name="aip-premis-relationship"></a><strong>AIP-PREMIS-RELATIONSHIP</strong>: The
-<code class="highlighter-rouge">relationship</code> element SHOULD be used to describe relationships of the digital
+<code class="language-plaintext highlighter-rouge">relationship</code> element SHOULD be used to describe relationships of the digital
 object.</p>
 
 <p><a name="aip-premis-aip-included"></a><strong>AIP-PREMIS-AIP-INCLUDED</strong>: If an AIP is
-part of another AIP, then the element <code class="highlighter-rouge">relationshipSubType</code> MUST reference the
+part of another AIP, then the element <code class="language-plaintext highlighter-rouge">relationshipSubType</code> MUST reference the
 superordinated AIP.</p>
 
 <p>An example of the latter case is shown in Listing 16.</p>
@@ -1459,7 +1542,7 @@ Relationship</p>
 <h5 id="53228-linking-rights-statement">5.3.2.2.8. Linking rights statement</h5>
 
 <p><a name="aip-premis-rights"></a><strong>AIP-PREMIS-RIGHTS</strong>: The a
-<code class="highlighter-rouge">linkingRightsStatementIdentifier</code> element COULD be used to describe rights
+<code class="language-plaintext highlighter-rouge">linkingRightsStatementIdentifier</code> element COULD be used to describe rights
 statement attached to the object.</p>
 
 <p>For example, only files which have the “discovery right” are being indexed in
@@ -1488,7 +1571,7 @@ Rights statement</p>
 
 <h5 id="53231-event-identifier">5.3.2.3.1. Event identifier</h5>
 
-<p><a name="aip-premis-event-id"></a><strong>AIP-PREMIS-EVENT-ID</strong>: The <code class="highlighter-rouge">eventIdentifier</code>
+<p><a name="aip-premis-event-id"></a><strong>AIP-PREMIS-EVENT-ID</strong>: The <code class="language-plaintext highlighter-rouge">eventIdentifier</code>
 SHOULD be used to identify events, such as preservation actions, which were applied.
 An example is shown in Listing 18.</p>
 
@@ -1506,7 +1589,7 @@ Event identifier</p>
 <h5 id="53232-link-to-agentobject">5.3.2.3.2. Link to agent/object</h5>
 
 <p><a name="aip-premis-event-agent"></a><strong>AIP-PREMIS-EVENT-AGENT</strong>: If an event is desscribed, the agent which caused
-the event (e.g. person, software, hardware, etc.) MUST be related to the event by means of the <code class="highlighter-rouge">linkingAgentIdentifier</code> element.</p>
+the event (e.g. person, software, hardware, etc.) MUST be related to the event by means of the <code class="language-plaintext highlighter-rouge">linkingAgentIdentifier</code> element.</p>
 
 <p>In the example shown in listing 20 the SIP to AIP conversion software is linked as agent with identifier value
 ’Sip2Aip’ and the corresponding object is linked by the local UUID value. An
@@ -1535,7 +1618,7 @@ Link to agent/object</p>
 
 <p><a name="aip-premis-event-type"></a><strong>AIP-PREMIS-EVENT-AGENT</strong>: The event by which a
 resource was created SHOULD to be recorded by means of the
-<code class="highlighter-rouge">relatedEventIdentification</code> element.</p>
+<code class="language-plaintext highlighter-rouge">relatedEventIdentification</code> element.</p>
 
 <p>An example is shown in Listing 21.</p>
 
@@ -1574,7 +1657,7 @@ resource was created SHOULD to be recorded by means of the
 Migration event</p>
 
 <p>The event shown in Listing 21 expresses the fact that the object
-<code class="highlighter-rouge">metadata/file.xml</code> is the result of the migration event “migration-001” and the
+<code class="language-plaintext highlighter-rouge">metadata/file.xml</code> is the result of the migration event “migration-001” and the
 event which created the source object is “ingest-001”.</p>
 
 <p><a name="premisagent"></a></p>
@@ -1582,9 +1665,9 @@ event which created the source object is “ingest-001”.</p>
 <h4 id="5324-premis-agent">5.3.2.4. PREMIS agent</h4>
 
 <p><a name="aip-premis-agent"></a><strong>AIP-PREMIS-AGENT</strong>: Agents which are referenced in
-events must be described by means of the <code class="highlighter-rouge">agent</code> element.</p>
+events must be described by means of the <code class="language-plaintext highlighter-rouge">agent</code> element.</p>
 
-<p>Listing 22 shows a software for indexing named <code class="highlighter-rouge">IndexingSoftware</code> which supports
+<p>Listing 22 shows a software for indexing named <code class="language-plaintext highlighter-rouge">IndexingSoftware</code> which supports
 full text search of the items contained in a package.
 In this case, the “discovery right” is assigned to this agent.</p>
 
@@ -1614,9 +1697,9 @@ Software as an agent</p>
 <h4 id="5325-premis-rights">5.3.2.5. PREMIS rights</h4>
 
 <p><a name="aip-premis-rights"></a><strong>AIP-PREMIS-RIGHTS</strong>: Rights which are referenced
-in rights statements MUST be described by means of the <code class="highlighter-rouge">rights</code> element.</p>
+in rights statements MUST be described by means of the <code class="language-plaintext highlighter-rouge">rights</code> element.</p>
 
-<p>The <code class="highlighter-rouge">rights</code> element holds information about the rights status of individual
+<p>The <code class="language-plaintext highlighter-rouge">rights</code> element holds information about the rights status of individual
 digital objects or about agents. An example is shown in Listing 23.</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rights&gt;</span>
@@ -1659,7 +1742,7 @@ in the root METS file of the AIP. By definition, this identifier is the
 identifier of the AIP itself.</p>
 
 <p><a name="aip-container-id"></a><strong>AIP-CONTAINER-ID:</strong>: The identifier of the AIP
-– defined by the attribute <code class="highlighter-rouge">OBJID</code> of the root METS file’s root element SHOULD
+– defined by the attribute <code class="language-plaintext highlighter-rouge">OBJID</code> of the root METS file’s root element SHOULD
 be used to derive the beginning part of the file name of the physical storage
 container.</p>
 
@@ -1693,19 +1776,19 @@ is the pairtree character mapping specification.<sup id="fnref:18"><a href="#fn:
 
 <p>For example, let us assume the identifier of the AIP was:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn:uuid:123e4567-e89b-12d3-a456-426655440000"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn:uuid:123e4567-e89b-12d3-a456-426655440000"
 </code></pre></div></div>
 
 <p>Then this identifier string would be converted to the folder name because
 “: -&gt; +” is defined as a single-character to single-character conversion:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000"
 </code></pre></div></div>
 
 <p>The packaged entity should also bear this name, e.g. packaged using TAR the
 name would be:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000.tar"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000.tar"
 </code></pre></div></div>
 
 <p>In this example, the AIP’s physical container file name only consists of the
@@ -1718,7 +1801,7 @@ the version, date, sequence number, or the like.</p>
 <p>For example, a version number could be added as a suffix to the AIP file name ID as
 follows:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000_v00001.tar"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000_v00001.tar"
 </code></pre></div></div>
 
 <p><a name="aip-container-part"></a><strong>AIP-CONTAINER-PART</strong>: If a physical container
@@ -1728,7 +1811,7 @@ name ID.</p>
 <p>For example, a number for the corresponding part could be added as a suffix to the
 AIP file name ID as follows:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000_part00001.tar"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000_part00001.tar"
 </code></pre></div></div>
 
 <p><a name="packaging"></a></p>
@@ -1739,7 +1822,7 @@ AIP file name ID as follows:</p>
 
 <h4 id="5421-tar-packaging">5.4.2.1. TAR packaging</h4>
 
-<p>TAR is an archive file format and also refers to the software <code class="highlighter-rouge">tar</code> which is
+<p>TAR is an archive file format and also refers to the software <code class="language-plaintext highlighter-rouge">tar</code> which is
 a software utility that can be used to bundle up files into one file for being
 able to transfer archival packages.</p>
 
@@ -1751,10 +1834,10 @@ extracted into a single folder which includes the AIP content.</p>
 
 <p>As an example, let’s assume a TAR file with the following name:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000.tar"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"urn+uuid+123e4567-e89b-12d3-a456-426655440000.tar"
 </code></pre></div></div>
 
-<p>If it is extracted, a folder <code class="highlighter-rouge">urn:uuid:123e4567-e89b-12d3-a456-426655440000</code> is
+<p>If it is extracted, a folder <code class="language-plaintext highlighter-rouge">urn:uuid:123e4567-e89b-12d3-a456-426655440000</code> is
 created which includes the AIP content, as shown in Figure <a href="#fig14">14</a>.</p>
 
 <p><a name="fig14"></a>
@@ -1799,9 +1882,9 @@ used as the packaging format, the content SHOULD be aggregated without
 compression.</p>
 
 <p>For example, to create a TAR archive without compression for the AIP folder
-<code class="highlighter-rouge">"urn+uuid+123e4567-e89b-12d3-a456-426655440000"</code> using the <code class="highlighter-rouge">tar</code> utility:</p>
+<code class="language-plaintext highlighter-rouge">"urn+uuid+123e4567-e89b-12d3-a456-426655440000"</code> using the <code class="language-plaintext highlighter-rouge">tar</code> utility:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar -cf "urn+uuid+123e4567-e89b-12d3-a456-426655440000.tar" "urn+uuid+123e4567-e89b-12d3-a456-426655440000"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar -cf "urn+uuid+123e4567-e89b-12d3-a456-426655440000.tar" "urn+uuid+123e4567-e89b-12d3-a456-426655440000"
 </code></pre></div></div>
 
 <p><a name="bagit"></a></p>
@@ -1813,20 +1896,20 @@ for storage and transfer of arbitrary digital content. It can be used for
 packaging the AIP.</p>
 
 <p><a name="aip-package-bagit"></a><strong>AIP-PACKAGE-BAGIT</strong>: As defined by the BagIt
-specification, the <code class="highlighter-rouge">bagit.txt</code> file in the root folder MUST contain the BagIt
+specification, the <code class="language-plaintext highlighter-rouge">bagit.txt</code> file in the root folder MUST contain the BagIt
 version and tag file character encoding.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BagIt-Version: 0.97
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BagIt-Version: 0.97
 Tag-File-Character-Encoding: UTF-8
 </code></pre></div></div>
 
 <p><a name="aip-package-bagit-profile"></a><strong>AIP-PACKAGE-BAGIT-PROFILE</strong>: A
-<code class="highlighter-rouge">bagit-info.txt</code> MUST be available and valid according to the E-ARK BagIt
+<code class="language-plaintext highlighter-rouge">bagit-info.txt</code> MUST be available and valid according to the E-ARK BagIt
 profile (corresponding to the version of this specification).<sup id="fnref:20"><a href="#fn:20" class="footnote">18</a></sup></p>
 
-<p>Example of a <code class="highlighter-rouge">bagit-info</code> file:</p>
+<p>Example of a <code class="language-plaintext highlighter-rouge">bagit-info</code> file:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BagIt-Profile: https://github.com/DILCISBoard/E-ARK-AIP/blob/{version-tag}/profiles/bagit/e-ark-bag-profile.json
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BagIt-Profile: https://github.com/DILCISBoard/E-ARK-AIP/blob/{version-tag}/profiles/bagit/e-ark-bag-profile.json
 Source-Organization: Example Organisation
 Organization-Address: {Street}, {City}, {Country}
 External-Identifier: urn:uuid:123e4567-e89b-12d3-a456-426655440000
@@ -1839,19 +1922,19 @@ E-ARK-Specification-Version: 1.1
 </code></pre></div></div>
 
 <p><a name="aip-package-bagit"></a><strong>AIP-PACKAGE-BAGIT</strong>: The containing folder of
-the AIP SHOULD be located in the <code class="highlighter-rouge">data</code> folder as shown Figure <a href="#fig15">15</a>.</p>
+the AIP SHOULD be located in the <code class="language-plaintext highlighter-rouge">data</code> folder as shown Figure <a href="#fig15">15</a>.</p>
 
 <p><a name="fig15"></a> <img src="figs/AIP-in-BagIt-data-folder.png" alt="Information Package structure" title="AIP in the `data` folder of a BagIt container."></p>
 
-<p><strong>Figure 15:</strong> AIP in the <code class="highlighter-rouge">data</code> folder of a BagIt container.</p>
+<p><strong>Figure 15:</strong> AIP in the <code class="language-plaintext highlighter-rouge">data</code> folder of a BagIt container.</p>
 
 <p><a name="aip-package-bagit-fetch"></a><strong>AIP-PACKAGE-BAGIT-FETCH</strong>: If the AIP is
 a parent-AIP with the content of the logical AIP distributed over multiple
-child-AIPs, then the <code class="highlighter-rouge">fetch.txt</code> file<sup id="fnref:21"><a href="#fn:21" class="footnote">19</a></sup> SHOULD contain a list of URLs
+child-AIPs, then the <code class="language-plaintext highlighter-rouge">fetch.txt</code> file<sup id="fnref:21"><a href="#fn:21" class="footnote">19</a></sup> SHOULD contain a list of URLs
 referencing the child-AIP packages.</p>
 
 <p><a name="aip-package-bagit-fetch-manifest"></a>
-<strong>AIP-PACKAGE-BAGIT-FETCH-MANIFEST</strong>: If a <code class="highlighter-rouge">fetch.txt</code> file with a list of
+<strong>AIP-PACKAGE-BAGIT-FETCH-MANIFEST</strong>: If a <code class="language-plaintext highlighter-rouge">fetch.txt</code> file with a list of
 child-AIPs is used, then every child-AIP file listed in the fetch file SHOULD be
 listed in every payload manifest.</p>
 
@@ -2115,7 +2198,7 @@ listed in every payload manifest.</p>
       <td>0.1</td>
       <td>20.09.2016</td>
       <td>Sven Schlarb <br>Jan Rörden</td>
-      <td>First draft of the specification document based on E-ARK deliverable D4.3.</td>
+      <td>First draft based on E-ARK deliverable D4.3.</td>
     </tr>
     <tr>
       <td>0.2</td>
@@ -2145,13 +2228,25 @@ listed in every payload manifest.</p>
       <td>1.0</td>
       <td>27.01.2017</td>
       <td>Sven Schlarb <br>Jan Rörden</td>
-      <td>Addressing reviewer comments and language edits; final changes.</td>
+      <td>Address review comments and language; final changes.</td>
     </tr>
     <tr>
-      <td>1.1</td>
+      <td>2.0-DRAFT</td>
       <td>12.12.2018</td>
-      <td>Carl Wilson <br>Sven Schlarb</td>
+      <td>Sven Schlarb <br>Carl Wilson</td>
       <td>Migration to markdown, review</td>
+    </tr>
+    <tr>
+      <td>2.0.0</td>
+      <td>15.05.2019</td>
+      <td>Carl Wilson <br>Sven Schlarb</td>
+      <td>Version 2.0.0</td>
+    </tr>
+    <tr>
+      <td>2.0.1</td>
+      <td>09.09.2019</td>
+      <td>Carl Wilson</td>
+      <td>Site structure and PDF layout</td>
     </tr>
   </tbody>
 </table>
@@ -2242,11 +2337,36 @@ http://www.dilcis.eu/ or https://github.com/dilcisboard or contact us at
   </ol>
 </div>
 
+  </div>
+      <!-- FOOTER -->
+    <footer id="footer" class="wrap footer">
+    	<section class="copyright">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12 copyright ">
+              <div class="custom">
+    	          <h3>
+<img style="float: left;" src="/img/Logo_DILCIS_one_color-01.png" alt="DILCIS logo" width="234" height="69"><img style="float: right;" src="/img/DLM-Forum-lofo.png" alt="DLM-Forum Logo" width="95" height="72">
+</h3>
+                <h5 style="text-align: center;"> </h5>
+                <h5 style="text-align: center;">This site is maintained by the Digital Information LifeCycle Interoperability Standards Board. </h5>
+                <h6 style="text-align: center;">© DILCIS Board, 2019</h6>
+              </div>
+              <small>
+                <a href="http://twitter.github.io/bootstrap/" title="Bootstrap by Twitter" target="_blank">Bootstrap</a> is a front-end framework of Twitter, Inc. Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" title="MIT License" target="_blank">MIT License.</a>
+              </small>
+    				</div>
+					</div>
+    		</div>
+    	</section>
+    </footer>
+    <!-- //FOOTER -->
 
-      
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-    
-  </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
 </html>
