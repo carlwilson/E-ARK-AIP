@@ -19,8 +19,8 @@ abstract: |
         AIP specification defines a practice for splitting very large AIPs
         into multiple, sub-ordinated parts. Finally, the AIP specification gives a best
         practice recommendations regarding the physical packaging of AIPs.
-version: 2.0.1
-date: 09.09.2019
+version: 2.0.4
+date: 12.06.2020
 ---
 
 {{ page.subtitle }}
@@ -28,9 +28,9 @@ date: 09.09.2019
 
 # Preface
 ## I. Aim of the Specification
-This specification is one of several related specifications. The single most important aim of all of these specifications is the provision of a common set of specifications for packaging digital information for archiving purposes. The specifications are based on common, international standards for transmitting, describing and preserving digital data. They have been produced to help data creators, software developers and digital archives to tackle the challenge of short-, medium- and long-term data management and reuse in a sustainable, authentic, cost-efficient, manageable and interoperable way.
+This document is one of several related specifications which aim to provide a common set of usage descriptions of international standards for packaging digital information for archiving purposes. These specifications are based on common, international standards for transmitting, describing and preserving digital data. They also utilise the Reference Model for an Open Archival Information System (OAIS) which has Information Packages as its foundation. Familiarity with the core functional entities of OAIS is a prerequisite for understanding the specifications.
 
-The foundation upon which the specifications are built is the Reference model for an Open Archival Information System (OAIS) (OAIS Reference model) which has Information Packages as its basis. Familiarity with the core functional entities of OAIS is a prerequisite for understanding the specifications.
+The specifications are designed to help data creators, software developers and digital archives to tackle the challenge of short-, medium- and long-term data management and reuse in a sustainable, authentic, cost-efficient, manageable and interoperable way.
 A visualisation of the current specification network can be seen here:
 
 <a name="figi-dip"></a>
@@ -41,24 +41,25 @@ A visualisation of the current specification network can be seen here:
 ### Overview of the E-ARK Specifications
 
 #### Common Specification for Information Packages (E-ARK CSIP)
-This document introduces the concept of a Common Specification for Information Packages (CSIP). Its three main purposes are to:
+This document introduces the concept of a Common Specification for Information Packages (CSIP). The main purposes of CSIP are to:
 
-- Establish a common understanding of the requirements which need to be met in order to achieve interoperability of Information Packages.
+- Establish a common understanding of the requirements which need to be met to achieve interoperability of Information Packages.
 - Establish a common base for the development of more specific Information Package definitions and tools within the digital preservation community.
 - Propose the details of an XML-based implementation of the requirements using, to the largest possible extent, standards which are widely used in international digital preservation.
-- Ultimately the goal of the Common Specification is to reach a level of interoperability between all Information Packages so that tools implementing the Common Specification can be adopted by institutions without the need for further modifications or adaptations.
+
+Ultimately the goal of the Common Specification is to reach a level of interoperability between all Information Packages so that tools implementing the Common Specification can be adopted by institutions without the need for further modifications or adaptations.
 
 #### Specification for Submission Information Packages (E-ARK SIP)
 The main aims of this specification are to:
 
-- Define a general structure for a Submission Information Package format suitable for a wide variety of archival scenarios, e.g. document and image collections, databases or geographical data.
+- Define a general structure for a Submission Information Package format suitable for a wide variety of archival scenarios, such as document and image collections, databases or geospatial data.
 - Enhance interoperability between Producers and Archives.
-- Recommend best practices regarding metadata, content and structure of Submission Information Packages.
+- Recommend best practices regarding the structure, content and metadata of Submission Information Packages.
 
 #### Specification for Archival Information Packages (E-ARK AIP)
 The main aims of this specification are to:
 
-- Define a generic structure of the AIP format suitable for a wide variety of data types, such as document and image collections, archival records, databases or geographical data.
+- Define a generic structure of the AIP format suitable for a wide variety of data types, such as document and image collections, archival records, databases or geospatial data.
 - Recommend a set of metadata related to the structural and the preservation aspects of the AIP as implemented by the reference implementation (earkweb).
 - Ensure the format is suitable to store large quantities of data.
 
@@ -69,13 +70,14 @@ The main aims of this specification are to:
 - Recommend a set of metadata related to the structural and access aspects of the DIP.
 
 #### Content Information Type Specifications (E-ARK CITS)
-The main aims of a Content Information Type Specification are to:
+The main aim of a Content Information Type Specification (CITS) is to:
 
-- Define, in technical terms, how data and metadata must be formatted and placed within a CSIP Information Package in order to achieve interoperability in exchanging specific Content Information.
-- The number of possible Content Information Type Specifications is unlimited. For at list of existing Content Information Type Specifications see, and read more about  Content Information Type Specifications in the Common Specification for Information Packages.
+- Define, in technical terms, how data and metadata must be formatted and placed within a CSIP Information Package to achieve interoperability in exchanging specific Content Information.
 
-## II. Organisational support
-This specification is maintained by the Digital Information LifeCycle Interoperability Standards Board (DILCIS Board, <http://dilcis.eu/>). The DILCIS Board was created to enhance and maintain the draft specifications developed in the European Archival Records and Knowledge Preservation Project (E-ARK project, <http://eark-project.com/>) which concluded in January 2017. The Board consists of eight members, but there is no restriction on the number of participants in the work. All Board documents and specifications are stored in GitHub (<https://github.com/DILCISBoard/>) while published versions are made available on the Board webpage. Since 2018 the DILCIS Board has been responsible for the core specifications in the Connecting Europe Facility eArchiving Building Block <https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eArchiving/>.
+The number of possible Content Information Type Specifications is unlimited. For a list of existing Content Information Type Specifications see the relevant section in the Common Specification for Information Packages.
+
+## II. Organisational Support
+This specification is maintained by the Digital Information LifeCycle Interoperability Standards Board (DILCIS Board, <http://dilcis.eu/>). The role of the DILCIS Board is to enhance and maintain the draft specifications developed in the European Archival Records and Knowledge Preservation Project (E-ARK project, <http://eark-project.com/>) which concluded in January 2017. The Board consists of eight members, but no restriction is placed on the number of participants taking part in the work. All Board documents and specifications are stored in GitHub (<https://github.com/DILCISBoard/>) while published versions are made available on the Board webpage. Since 2018 the DILCIS Board has been responsible for the core specifications in the Connecting Europe Facility eArchiving Building Block <https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eArchiving/>.
 
 ## III. Authors & Revision History
 A full list of contributors to this specification, as well as the revision history can be found in the [Postface material](#postface).
@@ -446,7 +448,7 @@ metadata can relate either to the IP as a whole or to individual representations
 As already mentioned, the structural requirements defined by the CSIP generally
 apply to the AIP. However, the AIP `representations` folder contains
 representations which are created as part of the AIP maintenance. If no
-mainteance operation was performed, this folder is not present. For this reason,
+maintenance operation was performed, this folder is not present. For this reason,
 the CSIP requirement which prescribes the presence of the `representations`
 folder is overruled by the following AIP specific requirement.
 
@@ -557,7 +559,7 @@ for using METS and PREMIS metadata to create AIPs.
 
 The AIP format offers a structure for storing the complete SIP, and it allows
 holding data and metadata which are created during SIP to AIP conversion and
-data that are created during the lifecycle of the AIP.
+data that are created during the life-cycle of the AIP.
 
 It is important to note that the AIP format implements the CSIP differently
 compared to the SIP and the DIP. The SIP and the DIP represent “snapshots in
@@ -614,7 +616,7 @@ contain a METS file.
 The naming scheme of these sub-folders can be freely defined. However, it should
 reflect the order of original submission and updates. This means that the folder
 names should allow alphanumerical ordering, for example, by using
-zerofill-number suffixes or by deriving the folder name from an ISO 8601 date.
+zero-filled number suffixes or by deriving the folder name from an ISO 8601 date.
 
 <a name="aip-submissions-order"></a>**AIP-SUBMISSIONS-ORDER**: The sub-folders
 containing IPs SHOULD allow alphanumeric sorting, e.g. by using zero-fill
@@ -719,8 +721,8 @@ not have to follow such logic.
 The AIP is an extension of the IP format; therefore it must follow the
 basic structure of an IP. Figure [9](#fig9) shows that the IP components,
 consisting of METS file, `Metadata` and `representations` folders,
-are repeated on theAIP level. The extension of the AIP format is basically
-given by the fact thatthe AIP is an IP which can contain another IP (here i.e.
+are repeated on the AIP level. The extension of the AIP format is basically
+given by the fact that the AIP is an IP which can contain another IP (here i.e.
 a SIP) in the `submission` folder.
 
 Note that the `representations` folder in the AIP root folder is optional.
@@ -830,7 +832,7 @@ Parent-child relationship between AIPs
 
 Even though this parent-child relationship could be used to create a
 hierarchical graph of AIPs, the scope of this specification is limited to
-a flat list of AIPs which are sub-ordinated to one parent-AIP.
+a flat list of AIPs which are subordinated to one parent-AIP.
 
 Assuming that a new AIP (e.g. containing an additional representation) needs to
 be added after parent- and child-AIPs have been stored, the recreation of the
@@ -914,7 +916,7 @@ Using this identifier, the system must be able to retrieve the corresponding
 package from the repository.
 
 According to the Common Specification, any ID element must start with a prefix
-(also, the XML ID datatype is does not allow IDs ed to start with a number, so a
+(also, the XML ID data type does not permit IDs that start with a number, so a
 prefix solves this issue).
 
 We recommended to use as a prefix an internationally recognized standard identifier
@@ -973,7 +975,7 @@ Table 2 lists the attributes of the `<file>` element with an example value. The
 
 |  Attribute  |   Description   |  Example Value     |
 |-------------|-----------------|--------------------|
-| `file/@ID`        | Identifier of a file wich is part of the AIPFile identifier; must be unique and start with the prefix `ID` | `ID77146c6c-c8c3-4406-80b5-b3b41901f9d0` |
+| `file/@ID`        | Identifier of a file which is part of the AIP File identifier; must be unique and start with the prefix `ID` | `ID77146c6c-c8c3-4406-80b5-b3b41901f9d0` |
 | `file/@ADMID`       | Used to link it to relevant administrative metadata sections that relate to the digital object described. Can be a white space separated list of identifiers. | `ID4566af74-0f7b-11e5-a6c0-1697f925ec7b` <br/>`ID4566af74-0f7b-11e5-a6c0-1697f925ec7c` |
 | `file/@CHECKSUMTYPE` | Hash-sum calculator algorithm | `SHA-256` |
 | `file/@CHECKSUM` | Hash-sum | `977fb584d53cd64662dfba427f351908` <br/>`13dfc58979f51a2703f8621b9e1bc274` |
@@ -1283,7 +1285,7 @@ Object identifier
 
 <a name="aip-premis-checksums"></a>**AIP-PREMIS-CHECKSUMS**: Checksums COULD be
 provided as a descendant of the `objectCharacteristics` element information in
-form of a SHA-256 hashsum, a fixed size 256-bit value.
+form of a SHA-256 checksum, a fixed size 256-bit value.
 
 An example is shown in Listing 11.
 
@@ -1304,7 +1306,7 @@ Hashsum (value shortened)
 
 <a name="aip-premis-file-format"></a>**AIP-PREMIS-FILE-FORMAT**: The format
 element COULD be provided either using the formatRegistry or the
-formatDesignation element subelements, or both.
+formatDesignation element sub-elements, or both.
 
 <a name="aip-premis-file-format-puid"></a>**AIP-PREMIS-FILE-FORMAT-PUID**:
 Regarding the formatRegistry, the Persistent Unique Identifier (PUID)[^14]
@@ -1409,7 +1411,7 @@ object.
 
 <a name="aip-premis-aip-included"></a>**AIP-PREMIS-AIP-INCLUDED**: If an AIP is
 part of another AIP, then the element `relationshipSubType` MUST reference the
-superordinated AIP.
+super-ordinate AIP.
 
 An example of the latter case is shown in Listing 16.
 
@@ -1482,7 +1484,7 @@ Event identifier
 
 ##### 5.3.2.3.2\. Link to agent/object
 
-<a name="aip-premis-event-agent"></a>**AIP-PREMIS-EVENT-AGENT**: If an event is desscribed, the agent which caused
+<a name="aip-premis-event-agent"></a>**AIP-PREMIS-EVENT-AGENT**: If an event is described, the agent which caused
 the event (e.g. person, software, hardware, etc.) MUST be related to the event by means of the `linkingAgentIdentifier` element.
 
 In the example shown in listing 20 the SIP to AIP conversion software is linked as agent with identifier value
@@ -1743,7 +1745,7 @@ AIP content extracted from a TAR package.
 
 <a name="aip-tarpackage-manifest"></a>**AIP-TARPACKAGE-MANIFEST**: In addition
 to fixity information recorded in the METS file, the AIP COULD include a
-manifest file (manifest.txt) listing files with MD5 and SHA-256 hashsum.
+manifest file (manifest.txt) listing files with MD5 and SHA-256 checksum.
 
 The manifest file is a text file containing a list of records separated by two
 line breaks (two carriage return characters (hexadecimal 0D0D) or two times
@@ -2071,6 +2073,7 @@ listed in every payload manifest.
 | 2.0-DRAFT    | 12.12.2018 | Sven Schlarb <br/>Carl Wilson    | Migration to markdown, review                          |
 | 2.0.0        | 15.05.2019 | Carl Wilson <br/>Sven Schlarb    | Version 2.0.0                                          |
 | 2.0.1        | 09.09.2019 | Carl Wilson                      | Site structure and PDF layout                          |
+| 2.0.4        | 12.06.2020 | K. Bredenberg, C.Wilson & J. Kaminski | SYD, OPF & HIGH | Preface text and output display update | 
 
 
 III Acknowledgements
