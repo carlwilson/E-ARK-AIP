@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/release-notes/</loc>
+</url>
+<url>
+<loc>/profile/</loc>
+</url>
+<url>
+<loc>/archive/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/examples/</loc>
+</url>
+<url>
+<loc>/figs/</loc>
+</url>
+<url>
+<loc>/archive/v1/DASBOARD_E-ARK_AIP_1_0.pdf</loc>
+<lastmod>2020-06-16T09:29:35+00:00</lastmod>
+</url>
+<url>
+<loc>/archive/v2_0/aip-specification-v2-0-0.pdf</loc>
+<lastmod>2020-06-16T09:29:35+00:00</lastmod>
+</url>
+<url>
+<loc>/archive/v2_0/eark-aip-v2-0-1.pdf</loc>
+<lastmod>2020-06-16T09:29:35+00:00</lastmod>
+</url>
+<url>
+<loc>/pdf/eark-aip.pdf</loc>
+<lastmod>2020-06-16T09:29:49+00:00</lastmod>
+</url>
+</urlset>
